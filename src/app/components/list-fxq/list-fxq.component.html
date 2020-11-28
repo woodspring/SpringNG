@@ -1,1 +1,22 @@
 <p>list-fxq works!</p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2> FXQuote List</h2>
+  </div>
+  <div class="panel-table">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>SYMBOL</th>
+          <th>TENOR</th>
+          <th>Price</th>
+          <th>Q Time</th>
+          <th>id</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let FXQuote of fxqoutList |async"></tr>
+      </tbody>
+    </table>
+  </div>
+</div>

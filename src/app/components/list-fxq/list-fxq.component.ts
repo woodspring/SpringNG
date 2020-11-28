@@ -12,7 +12,7 @@ import { FXSpot } from '../../FXSpot';
   styleUrls: ['./list-fxq.component.css']
 })
 export class ListFxqComponent implements OnInit {
-  private fxqoutList: Observable<FXQuote[]>;
+  fxqoutList?: Observable<FXQuote[]>;
 
   constructor(private springfxqService: SpringfxqService, private router: Router) {}
 
